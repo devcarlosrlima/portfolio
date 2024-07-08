@@ -4,7 +4,7 @@
   --yt-bg-color: #121012;
   --yt-main-color: #60bafa;
   --yt-sub-text-color: #b5eaff;
-  --yt-nav-bg-color: #18181818;
+  --yt-nav-bg-color: #18181815;
 }
 
 * {
@@ -25,6 +25,7 @@ body {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #121212 ;
   height: 100%;
 }
 

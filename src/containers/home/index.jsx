@@ -1,16 +1,11 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { Animate } from "react-simple-animate";
-import { useNavigate } from "react-router-dom";
 import "./style.scss";
+import { SiWhatsapp } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const handleNavtoContactPage = () => {
-    navigate("/contact");
-  };
-
   return (
     <section id="home" className="home">
       <div className="home__text-wrapper">
@@ -18,7 +13,7 @@ const Home = () => {
           Hello, I'm Carlos Lima
           <br />
           <ReactTyped
-            strings={["Full Stack developer!", "Software Engineer!"]}
+            strings={[" Full Stack Developer!", "Software Engineer!"]}
             typeSpeed={50}
             backSpeed={60}
             startDelay={100}
@@ -33,14 +28,44 @@ const Home = () => {
         duration={1}
         delay={1}
         start={{
-          transform : 'translateY(550px)',
-        }}     
+          transform: "translateY(550px)",
+        }}
         end={{
-          transform : 'translateX(0px)',
+          transform: "translateX(0px)",
         }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNavtoContactPage}>Hire Me</button>
+          <a
+            className="download"
+            target="_blank"
+            href="https://drive.google.com/file/d/17RAU6NbhMVXnBuz8oD7fBZycfW2jnMzD/view?usp=sharing"
+            download="Carlos.pdf"
+          >
+            Download resume
+          </a>
+          <div>
+            <a
+              className="socialMedia"
+              target="_blank"
+              href="https://github.com/devcarlosrlima"
+            >
+              <FaGithub size={40} />
+            </a>
+            <a
+              className="socialMedia"
+              target="_blank"
+              href="https://www.linkedin.com/in/devcarloslima/"
+            >
+              <FaLinkedin size={40} />
+            </a>
+            <a
+              className="socialMedia"
+              target="_blank"
+              href="https://abrir.link/zKoix"
+            >
+              <SiWhatsapp size={40} />
+            </a>
+          </div>
         </div>
       </Animate>
     </section>

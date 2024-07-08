@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { FaBars, FaReact } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { GiAstronautHelmet } from "react-icons/gi";
 import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import './style.scss';
+import "./style.scss";
 
 const data = [
   {
@@ -25,10 +26,6 @@ const data = [
     label: "PORTFOLIO",
     to: "/portfolio",
   },
-  {
-    label: "CONTACT",
-    to: "/contact",
-  },
 ];
 
 const Navbar = () => {
@@ -43,10 +40,10 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <FaReact size={30} />
+            <GiAstronautHelmet size={50} />
           </Link>
         </div>
-        <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ''}`} >
+        <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>
           {data.map((item, key) => (
             <li key={key} className="navbar__container__menu__item">
               <Link
