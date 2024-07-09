@@ -86,7 +86,9 @@ const Portfolio = () => {
                 {index === hovereValue && (
                   <div>
                     <p>{item.name}</p>
-                    <a href={item.link}>Visit</a>
+                    <a href={item.link} target="_blank">
+                      Visit
+                    </a>
                   </div>
                 )}
               </div>
