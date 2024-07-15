@@ -17,7 +17,7 @@ const Portdata = [
 const filterData = [
   {
     filterId: 1,
-    label: "All",
+    label: "Todos",
   },
   {
     filterId: 2,
@@ -54,7 +54,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
-        headerText="My Portfolio"
+        headerText="Meu Portfolio"
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="portfolio__content">

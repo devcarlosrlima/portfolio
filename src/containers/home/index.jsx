@@ -10,10 +10,10 @@ const Home = () => {
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm Carlos Lima
+          Oi! Eu sou Carlos Lima,
           <br />
           <ReactTyped
-            strings={[" Full Stack Developer!", "Software Engineer!"]}
+            strings={[" Desenvolvedor Full Stack", "Engenheiro de Software!"]}
             typeSpeed={50}
             backSpeed={60}
             startDelay={100}
@@ -41,7 +41,7 @@ const Home = () => {
             href="https://drive.google.com/file/d/17RAU6NbhMVXnBuz8oD7fBZycfW2jnMzD/view?usp=sharing"
             download="Carlos.pdf"
           >
-            Download resume
+            Baixar Currículo
           </a>
           <div>
             <a

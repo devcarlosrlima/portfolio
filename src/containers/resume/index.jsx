@@ -16,13 +16,13 @@ const Resume = () => {
   return (
     <section id="resume" className="resume">
       <PageHeaderContent
-        headerText="My Resume"
+        headerText="Meu Currículo"
         icon={<FaBlackTie size={40} />}
       />
 
       <div className="timeline">
         <div className="timeline__experience">
-          <h3 className="timeline__experience__header-text">Experience</h3>
+          <h3 className="timeline__experience__header-text">Experiência</h3>
           <VerticalTimeline
             layout={"1-column"}
             lineColor="var(--yt-main-color)"
@@ -57,7 +57,7 @@ const Resume = () => {
           </VerticalTimeline>
         </div>
         <div className="timeline__education">
-          <h3 className="timeline__education__header-text">Education</h3>
+          <h3 className="timeline__education__header-text">Educação</h3>
           <VerticalTimeline
             layout={"1-column"}
             lineColor="var(--yt-main-color)"

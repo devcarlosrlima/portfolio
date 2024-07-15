@@ -7,19 +7,19 @@ import "./style.scss";
 
 const data = [
   {
-    label: "HOME",
+    label: "INICIO",
     to: "/",
   },
   {
-    label: "ABOUT ME",
+    label: "SOBRE",
     to: "/about",
   },
   {
-    label: "SKILLS",
+    label: "HABILIDADES",
     to: "/skills",
   },
   {
-    label: "RESUME",
+    label: "CURRÍCULO",
     to: "/resume",
   },
   {

@@ -8,38 +8,38 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 
 const personalDetails = [
   {
-    label: "Name",
+    label: "Nome:",
     value: "Carlos Lima",
   },
   {
-    label: "Age",
+    label: "Idade:",
     value: "26",
   },
   {
-    label: "Address",
+    label: "Endereço:",
     value: "Maceió, Alagoas, Brasil",
   },
   {
-    label: "Email",
+    label: "Email:",
     value: "dev.frontcarloslima@gmail.com",
   },
   {
-    label: "Contact No",
+    label: "Tel.:",
     value: "+55 82999953064",
   },
 ];
 
 const jobSummary = `
-  My name is Carlos Lima, I was born in 1997 and I am 26 years old. I started programming at the age of 20, creating landing pages for family and friends as a hobby. I did it because I enjoyed it. It was only in 2023, when I was about to turn 25, that I started taking it seriously. I began studying how software works and how I could reach that level. I dedicated myself and really studied programming languages, finding it quite easy to learn them. I think I have a talent for this, but I also like to believe that effort and hard work helped a lot. It didn't take me long to master some languages like Java and JavaScript, as well as frameworks like React.
-  
-  Currently, I am studying Software Engineering at Faculdade Ampli. I hope to graduate soon and get my diploma, but more than that, I hope to work at a good company and put into practice everything I've studied and practiced, both during my solo studies and my time at the university.
+  eu me chamo Carlos Lima, nasci em 97 e tenho 26 anos, comecei a programar com 20 anos de idade, comecei fazendo landing pages para familiares e amigos, era apenas hobby, fazia aquilo porque eu gostava, somente em 2023 quando eu ja estava pra fazer 25 anos  foi que comecei a me dedicar de verdade a isso, comecei a estudar como softwares funcionavam e como eu conseguiria chegar ate aquele ponto, comecei a me dedicar, estudar de verdade as linguagens de programação e tive grande facilidade em aprender elas, acho que tenho talento pra isso, mas gosto também de acreditar que o esforço e trabalho duro ajudaram bastante, nao demorei muito pra dominar algumas linguagens como Java e JavaScript e framework como React...
+
+Atualmente eu to cursando Engenharia de Software na Faculdade Ampli, espero me formar em breve, e conseguir meu diploma, mas mais do que isso espero que possa conseguir trabalhar em uma boa empresa e colocar em pratica tudo que estudei e pratiquei nesse tempo em que estudei sozinho e também o tempo que estudei na faculdade.
 `;
 
 const About = () => {
   return (
     <section id="about" className="about">
       <PageHeaderContent
-        headerText="About Me"
+        headerText="Sobre mim"
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="about__content">
@@ -55,7 +55,7 @@ const About = () => {
               transform: "translateX(0px)",
             }}
           >
-            <h3>Full Stack Developer</h3>
+            <h3>Desenvolvedor Full Stack</h3>
             <div className="about__summary">
               {jobSummary.split("\n").map((paragraph, index) => (
                 <p key={index}>{paragraph.trim()}</p>
@@ -74,7 +74,7 @@ const About = () => {
               transform: "translateX(0px)",
             }}
           >
-            <h3 className="personalInfoHeaderText">Personal Information</h3>
+            <h3 className="personalInfoHeaderText">Informações Pessoais</h3>
             <ul>
               {personalDetails.map((item, i) => (
                 <li key={i}>

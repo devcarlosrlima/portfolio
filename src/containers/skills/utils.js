@@ -47,7 +47,7 @@ export const skillsData = [
         ]
     },
     {
-        label: "DATABASES",
+        label: "BANCO DE DADOS",
         data: [
             {
                 skillName: "SQL",
