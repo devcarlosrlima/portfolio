@@ -6,6 +6,7 @@ import movielist from "../../img/movie list.jpg";
 import landingPage from "../../img/landingpage.jpg";
 import landingPageMKD from "../../img/landingpageMKD.jpg";
 import Calculadora from "../../img/calculadora.jpg";
+import ecommerceAPI from "../../img/EcommerceAPI.png";
 import "./style.scss";
 import { FaGithub } from "react-icons/fa6";
 
@@ -44,6 +45,13 @@ const Portdata = [
     image: Calculadora,
     linkProj: "https://calculator-js-fcc.vercel.app/",
     linkRepo: "https://github.com/devcarlosrlima/CalculatorJS",
+  },
+  {
+    id: 3,
+    name: "Sistema de e-commerce",
+    image: ecommerceAPI,
+    linkProj: "",
+    linkRepo: "https://github.com/devcarlosrlima/API.para.E-comerce/blob/main/README.md",
   },
 ];
 
