@@ -1,16 +1,49 @@
 import React, { useState } from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import image1 from "../../img/image1.jpg";
-
+import crud from "../../img/crud.jpg";
+import movielist from "../../img/movie list.jpg";
+import landingPage from "../../img/landingpage.jpg";
+import landingPageMKD from "../../img/landingpageMKD.jpg";
+import Calculadora from "../../img/calculadora.jpg";
 import "./style.scss";
+import { FaGithub } from "react-icons/fa6";
 
 const Portdata = [
   {
-    id: 3,
-    name: "Task Management System",
-    image: image1,
-    link: "https://github.com/devcarlosrlima/Task-Management-System/",
+    id: 2,
+    name: "Crud Simples",
+    image: crud,
+    linkProj: "https://crud-one-ochre.vercel.app/",
+    linkRepo: "https://github.com/devcarlosrlima/CRUD",
+  },
+  {
+    id: 2,
+    name: "Movie List",
+    image: movielist,
+    linkProj: "https://movielistf.vercel.app/",
+    linkRepo: "https://github.com/devcarlosrlima/MovieList",
+  },
+  {
+    id: 2,
+    name: "Landing Page",
+    image: landingPage,
+    linkProj: "https://first-landing-page-three-tau.vercel.app/",
+    linkRepo: "https://github.com/devcarlosrlima/landingpage",
+  },
+  {
+    id: 2,
+    name: "Landing Page - MKD",
+    image: landingPageMKD,
+    linkProj: "https://gluco6naturalhealth.com/",
+    linkRepo: "https://github.com/devcarlosrlima/LandingpageMKD",
+  },
+  {
+    id: 2,
+    name: "Calculadora",
+    image: Calculadora,
+    linkProj: "https://calculator-js-fcc.vercel.app/",
+    linkRepo: "https://github.com/devcarlosrlima/CalculatorJS",
   },
 ];
 
@@ -86,9 +119,15 @@ const Portfolio = () => {
                 {index === hovereValue && (
                   <div>
                     <p>{item.name}</p>
-                    <a href={item.link} target="_blank">
-                      Visit
-                    </a>
+                    <a  href={item.linkProj} target="_blank">
+                      link do projeto
+                    </a><br/><br /><br />
+                     <a   className="linkRepo"                    
+                      target="_blank"
+                      href={item.linkRepo}
+                    >
+                      <FaGithub size={40} />
+                    </a> 
                   </div>
                 )}
               </div>
