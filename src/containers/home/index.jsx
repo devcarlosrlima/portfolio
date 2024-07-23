@@ -38,7 +38,7 @@ const Home = () => {
           <a
             className="download"
             target="_blank"
-            href="https://drive.google.com/file/d/17RAU6NbhMVXnBuz8oD7fBZycfW2jnMzD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1c2VHkJKFgprPJFimtLtIleBy7Jo7hqGC/view?usp=sharing"
             download="Carlos.pdf"
           >
             Baixar Currículo
