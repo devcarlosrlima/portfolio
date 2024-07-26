@@ -49,14 +49,8 @@ const Portdata = [
   },
   {
     id: 3,
-    name: "Sistema de e-commerce",
-    image: ecommerceAPI,
-    linkProj: "",
-    linkRepo: "https://github.com/devcarlosrlima/API.para.E-comerce/blob/main/README.md",
-  },
-  {
-    id: 3,
-    name: "API de Login e Registro de usuario",
+    name: `API de Login e 
+    Registro de usuario`,
     image: APIlogin,
     linkProj: "https://api-login-vnr5.onrender.com",
     linkRepo: "https://github.com/devcarlosrlima/API-login",
