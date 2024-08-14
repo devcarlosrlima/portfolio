@@ -6,7 +6,7 @@ import movielist from "../../img/movie list.jpg";
 import landingPage from "../../img/landingpage.jpg";
 import landingPageMKD from "../../img/landingpageMKD.jpg";
 import Calculadora from "../../img/calculadora.jpg";
-import ecommerceAPI from "../../img/EcommerceAPI.png";
+import PeopleAPI from "../../img/People API.png";
 import APIlogin from '../../img/api-login.jpg';
 import "./style.scss";
 import { FaGithub } from "react-icons/fa6";
@@ -54,6 +54,13 @@ const Portdata = [
     image: APIlogin,
     linkProj: "https://api-login-vnr5.onrender.com",
     linkRepo: "https://github.com/devcarlosrlima/API-login",
+  },
+  {
+    id: 3,
+    name: 'People API',
+    image: PeopleAPI,
+    linkProj: "https://github.com/devcarlosrlima/People-API",
+    linkRepo: "https://github.com/devcarlosrlima/People-API",
   },
 ];
 
